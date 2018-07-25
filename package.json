@@ -1,0 +1,22 @@
+{
+  "name": "renovate-config-snowcoders",
+  "version": "0.0.1",
+  "description": "Renovate config for all Snowcoders projects to inherit from",
+  "author": "",
+  "license": "MIT",
+  "renovate-config": {
+    "default": {
+      "extends": ["config:base"],
+      "assignees": ["k2snowman69"],
+      "automerge": true,
+      "automergeType": "pr",
+      "major": {
+        "automerge": false
+      },
+      "devDependencies": {
+        "automerge": true
+      },
+      "pinVersions": false
+    }
+  }
+}
