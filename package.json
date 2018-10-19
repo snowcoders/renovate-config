@@ -10,12 +10,6 @@
       "assignees": ["k2snowman69"],
       "automerge": true,
       "automergeType": "pr",
-      "major": {
-        "automerge": false
-      },
-      "devDependencies": {
-        "automerge": true
-      },
       "pinVersions": false
     }
   }
