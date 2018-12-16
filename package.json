@@ -1,7 +1,7 @@
 {
   "author": "k2snowman69",
-  "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "dependencies": {},
+  "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "devDependencies": {
     "@snowcoders/sortier": "2.3.2",
     "husky": "1.2.1",
@@ -10,14 +10,14 @@
     "rimraf": "2.6.2",
     "typescript": "3.2.2"
   },
+  "license": "MIT",
+  "name": "@snowcoders/renovate-config",
   "optionalDependencies": {
     "@snowcoders/sortier": "^2.0.0",
     "husky": "^1.0.0",
     "lint-staged": "^8.0.0",
     "prettier": "^1.0.0"
   },
-  "license": "MIT",
-  "name": "@snowcoders/renovate-config",
   "renovate-config": {
     "default": {
       "automerge": true,
@@ -35,5 +35,5 @@
     "prepare": "npm run clean && npm run build"
   },
   "tsconfig": "./tsconfig.base.json",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
