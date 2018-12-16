@@ -1,14 +1,20 @@
 {
   "author": "k2snowman69",
   "description": "Renovate and other configs for all Snowcoders projects to inherit from",
+  "dependencies": {},
   "devDependencies": {
     "@snowcoders/sortier": "2.3.2",
     "husky": "1.2.1",
     "lint-staged": "8.1.0",
-    "npm-which": "^3.0.1",
     "prettier": "1.15.3",
     "rimraf": "2.6.2",
     "typescript": "3.2.2"
+  },
+  "optionalDependencies": {
+    "@snowcoders/sortier": "^2.0.0",
+    "husky": "^1.0.0",
+    "lint-staged": "^8.0.0",
+    "prettier": "^1.0.0"
   },
   "license": "MIT",
   "name": "@snowcoders/renovate-config",

@@ -1,12 +1,12 @@
 export const husky = {
   hooks: {
-    "pre-commit": "lint-staged -d"
+    "pre-commit": "lint-staged"
   }
 };
 
 function getRunIfExists(name: string, args: string = "") {
-  // return `${name} ${args}`;
-  return `node -e \"npm-which -c ${name} && ${name} ${args} || echo Skipping ${name}\"`;
+  return `${name} ${args}`;
+  // return `npm-which -c ${name} && \"${name} ${args} {pathsToLint}\" || \"echo Skipping ${name} on {pathsToLint}\"`;
 }
 export const lintStaged = {
   ignore: ["**/package-lock.json"],
