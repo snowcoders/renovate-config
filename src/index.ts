@@ -1,6 +1,6 @@
 export const husky = {
   hooks: {
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged -d"
   }
 };
 
