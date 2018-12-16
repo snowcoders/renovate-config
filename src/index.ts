@@ -5,8 +5,8 @@ export const husky = {
 };
 
 function getRunIfExists(name: string, args: string = "") {
-  return `${name} ${args}`;
-  // return `npm-which -c ${name} && ${name} ${args} || node -e \"\"`;
+  // return `${name} ${args}`;
+  return `node -e \"npm-which -c ${name} && ${name} ${args} || node -e ''\"`;
 }
 export const lintStaged = {
   ignore: ["**/package-lock.json"],
