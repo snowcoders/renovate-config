@@ -13,6 +13,11 @@ Currently it hosts the following configs
 
 We're open to hosting more, as long as they are a part of the Snowcoders ecosystem.
 
+Other things that are useful from this repository
+
+- .gitignore - We wil notify about updates via our changelog
+- .npmignore - We wil notify about updates via our changelog
+
 # Usage
 
 A great example of how to use these configs is this repository itself! Though for you instead of referencing the `dist` folder directly you would reference `@snowcoders/renovate-config`
