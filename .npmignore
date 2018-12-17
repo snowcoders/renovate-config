@@ -4,4 +4,4 @@
 .vscode/**
 src/**
 tsconfig.json
-*.js
+./*.js

@@ -22,7 +22,7 @@ export const lintStaged = {
       "git add"
     ],
     "**/*.{ts,tsx}": [
-      getRunIfExists("tslint", "-c tslint.json"),
+      // getRunIfExists("tslint", "-c tslint.json"),
       getRunIfExists("prettier", "--write"),
       getRunIfExists("sortier"),
       "git add"
@@ -39,5 +39,7 @@ export const nyc = {
   reporter: ["text-summary", "html"],
   sourceMap: true
 };
+
+export const prettier = {};
 
 export const sortier = {};
