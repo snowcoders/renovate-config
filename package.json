@@ -11,6 +11,7 @@
     "typescript": "3.2.2"
   },
   "license": "MIT",
+  "main": "./dist/index.js",
   "name": "@snowcoders/renovate-config",
   "optionalDependencies": {
     "@snowcoders/sortier": "^2.0.0",
@@ -35,5 +36,5 @@
     "prepare": "npm run clean && npm run build"
   },
   "tsconfig": "./tsconfig.base.json",
-  "version": "0.1.2"
+  "version": "0.1.3"
 }

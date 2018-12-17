@@ -1,4 +1,4 @@
-### Unreleased
+### 0.1.3
 
 - Migrated package from renovate-config-snowcoders to @snowcoders/renovate-config
 - Added a husky config
