@@ -29,14 +29,22 @@ export const lintStaged = {
   }
 };
 
-export const nyc = {
-  all: true,
-  exclude: ["src/**/*.test.ts", "src/**/*.test.tsx"],
-  extension: [".ts", ".tsx"],
-  include: ["src/**/*.ts", "src/**/*.tsx"],
-  instrument: true,
-  reporter: ["text-summary", "html"],
-  sourceMap: true
+export const jest = {
+  collectCoverage: true,
+  globals: {
+    "ts-jest": {
+      diagnostics: {
+        ignoreCodes: [151001]
+      },
+      tsConfig: "tsconfig.json"
+    }
+  },
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
+  testMatch: ["<rootDir>/src/**/*.test.+(ts|tsx|js|jsx)"],
+  testURL: "http://localhost/",
+  transform: {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  }
 };
 
 export const prettier = {};

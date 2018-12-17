@@ -17,6 +17,26 @@ We're open to hosting more, as long as they are a part of the Snowcoders ecosyst
 
 A great example of how to use these configs is this repository itself! Though for you instead of referencing the `dist` folder directly you would reference `@snowcoders/renovate-config`
 
+## Husky config
+
+No customization should be needed. Recommended filename `.huskyrc.js`.
+
+## Jest config
+
+No customization should be needed. Recommended filename `jest.config.js`.
+
+## Lint staged config
+
+No customization should be needed. Recommended filename `.lintstagedrc.js`.
+
+## Prettier config
+
+No customization should be needed. Recommended filename `.prettierrc.js`.
+
+## Sortier config
+
+No customization should be needed. Recommended filename `.sortierrc.js`.
+
 ## Typescript config
 
 You are able to use this package as a [base for your tsconfig file](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-2.html#tsconfigjson-inheritance-via-nodejs-packages).
@@ -38,18 +58,8 @@ Our config focuses more on the actual build outputs so your config can focus mor
 }
 ```
 
-## Husky config
+# Missing configs
 
-No customization should be needed
+## Nyc
 
-## Lint staged config
-
-No customization should be needed
-
-## Prettier config
-
-No customization should be needed
-
-## Sortier config
-
-No customization should be needed
+Nyc only supports `.nycrc` files. Instead they use an `extends` system which we have not set up.
