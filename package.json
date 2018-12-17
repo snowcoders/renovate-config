@@ -12,7 +12,7 @@
     "lint-staged": "8.1.0",
     "prettier": "1.15.3",
     "rimraf": "2.6.2",
-    "ts-jest": "23.10.4",
+    "ts-jest": "23.10.5",
     "typescript": "3.2.2"
   },
   "license": "MIT",
@@ -24,7 +24,7 @@
     "jest": "23.6.0",
     "lint-staged": "^8.0.0",
     "prettier": "^1.0.0",
-    "ts-jest": "23.10.4"
+    "ts-jest": "23.10.5"
   },
   "renovate-config": {
     "default": {
