@@ -4,26 +4,25 @@ export const husky = {
   }
 };
 
-function getRunIfExists(name: string, args: string = "") {
-  return `${name} ${args}`;
-  // return `npm-which -c ${name} && \"${name} ${args} {pathsToLint}\" || \"echo Skipping ${name} on {pathsToLint}\"`;
+function getRunIfExists(command: string) {
+  return `exec-if-exists ${command}`;
 }
 export const lintStaged = {
   ignore: ["**/package-lock.json"],
   linters: {
     "**/*.{css, md}": [
-      getRunIfExists("prettier", "--write"),
+      getRunIfExists("prettier --write"),
       getRunIfExists("sortier"),
       "git add"
     ],
     "**/*.{html,js,jsx,json}": [
-      getRunIfExists("prettier", "--write"),
+      getRunIfExists("prettier --write"),
       getRunIfExists("sortier"),
       "git add"
     ],
     "**/*.{ts,tsx}": [
-      // getRunIfExists("tslint", "-c tslint.json"),
-      getRunIfExists("prettier", "--write"),
+      getRunIfExists("tslint -c tslint.json"),
+      getRunIfExists("prettier --write"),
       getRunIfExists("sortier"),
       "git add"
     ]

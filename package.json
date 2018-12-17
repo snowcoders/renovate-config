@@ -1,6 +1,8 @@
 {
   "author": "k2snowman69",
-  "dependencies": {},
+  "dependencies": {
+    "exec-if-exists": "^1.0.1"
+  },
   "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "devDependencies": {
     "@snowcoders/sortier": "2.3.2",
