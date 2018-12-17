@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist/",
+    "sourceMap": false
+  },
+  "extends": "./tsconfig.base.json",
+  "include": ["./src/**/*.ts"]
+}

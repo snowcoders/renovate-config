@@ -1,16 +1,48 @@
 {
-  "name": "renovate-config-snowcoders",
-  "version": "0.0.1",
-  "description": "Renovate config for all Snowcoders projects to inherit from",
-  "author": "",
+  "author": "k2snowman69",
+  "dependencies": {
+    "exec-if-exists": "^1.0.1"
+  },
+  "description": "Renovate and other configs for all Snowcoders projects to inherit from",
+  "devDependencies": {
+    "@snowcoders/sortier": "2.3.2",
+    "@types/jest": "23.3.9",
+    "husky": "1.2.1",
+    "jest": "23.6.0",
+    "lint-staged": "8.1.0",
+    "prettier": "1.15.3",
+    "rimraf": "2.6.2",
+    "ts-jest": "23.10.4",
+    "typescript": "3.2.2"
+  },
   "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "@snowcoders/renovate-config",
+  "optionalDependencies": {
+    "@snowcoders/sortier": "^2.0.0",
+    "husky": "^1.0.0",
+    "jest": "23.6.0",
+    "lint-staged": "^8.0.0",
+    "prettier": "^1.0.0",
+    "ts-jest": "23.10.4"
+  },
   "renovate-config": {
     "default": {
-      "extends": ["config:base"],
-      "assignees": ["k2snowman69"],
       "automerge": true,
       "automergeType": "pr",
-      "pinVersions": false
+      "extends": [
+        "config:base"
+      ],
+      "rangeStrategy": "auto"
     }
-  }
+  },
+  "repository": "github:snowcoders/renovate-config",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prepare": "npm run clean && npm run build",
+    "test": "jest"
+  },
+  "tsconfig": "./tsconfig.base.json",
+  "version": "0.2.0"
 }
