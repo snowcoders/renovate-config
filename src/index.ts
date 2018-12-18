@@ -10,7 +10,7 @@ function getRunIfExists(command: string) {
 export const lintStaged = {
   ignore: ["**/package-lock.json"],
   linters: {
-    "**/*.{css, md}": [
+    "**/*.{css,md}": [
       getRunIfExists("prettier --write"),
       getRunIfExists("sortier"),
       "git add"
