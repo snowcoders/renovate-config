@@ -7,7 +7,7 @@
   "devDependencies": {
     "@snowcoders/sortier": "2.3.2",
     "@types/jest": "23.3.10",
-    "husky": "1.2.1",
+    "husky": "1.3.0",
     "jest": "23.6.0",
     "lint-staged": "8.1.0",
     "prettier": "1.15.3",
