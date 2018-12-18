@@ -1,3 +1,7 @@
+### 0.2.1
+
+- Fixed lint-staged not running on `*.md` files
+
 ### 0.2.0
 
 - Updated .gitignore and .npmignore to be more generic so they can be the base standard across repositories
