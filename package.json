@@ -8,7 +8,7 @@
     "@snowcoders/sortier": "2.5.0",
     "@types/jest": "23.3.13",
     "husky": "1.3.1",
-    "jest": "23.6.0",
+    "jest": "24.0.0",
     "lint-staged": "8.1.0",
     "prettier": "1.16.1",
     "rimraf": "2.6.3",
@@ -21,7 +21,7 @@
   "optionalDependencies": {
     "@snowcoders/sortier": "^2.0.0",
     "husky": "^1.0.0",
-    "jest": "23.6.0",
+    "jest": "24.0.0",
     "lint-staged": "^8.0.0",
     "prettier": "^1.0.0",
     "ts-jest": "23.10.5"
