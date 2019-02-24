@@ -1,3 +1,8 @@
+### 0.2.2
+
+- Added autofixing of lint errors
+- Added eslint to javascript
+
 ### 0.2.1
 
 - Fixed lint-staged not running on `*.md` files
