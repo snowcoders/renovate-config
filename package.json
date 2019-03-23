@@ -19,6 +19,12 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@snowcoders/renovate-config",
+  "renovate-config": {
+    "default": {
+      "automerge": true,
+      "rangeStrategy": "auto"
+    }
+  },
   "repository": "github:snowcoders/renovate-config",
   "scripts": {
     "build": "tsc",
@@ -27,5 +33,5 @@
     "test": "jest"
   },
   "tsconfig": "./tsconfig.base.json",
-  "version": "1.0.0"
+  "version": "1.0.2"
 }

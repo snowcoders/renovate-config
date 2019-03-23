@@ -1,3 +1,11 @@
+### 1.0.2
+
+- Renovate: Automerge all PRs once approved
+
+### 1.0.1
+
+- Fixed `renovate.config` inheritence
+
 ### 1.0.0
 
 - Breaking: tsconfig
