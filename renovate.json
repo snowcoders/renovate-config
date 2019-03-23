@@ -1,9 +1,7 @@
 {
-  "default": {
-    "automerge": true,
-    "major": {
-      "automerge": false
-    },
-    "rangeStrategy": "auto"
-  }
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "rangeStrategy": "auto"
 }
