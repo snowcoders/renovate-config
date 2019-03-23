@@ -1,3 +1,13 @@
+### 1.0.0
+
+- Breaking: tsconfig
+  - Enabled `strict` mode
+  - Enabled `noFallthroughCasesInSwitch`
+  - Enabled `preserveConstEnums` to decrease compile size
+  - Added `tslib` as a dependency and set `importHelpers` to true as it should be default for all applications
+- Fixed `renovate.config` to not reference self
+- Updated `.npmignore` to omit all test related files so all files can be included in the build
+
 ### 0.2.2
 
 - Added autofixing of lint errors

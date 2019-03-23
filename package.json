@@ -1,7 +1,8 @@
 {
   "author": "k2snowman69",
   "dependencies": {
-    "exec-if-exists": "^1.0.1"
+    "exec-if-exists": "^1.0.1",
+    "tslib": "^1.9.0"
   },
   "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "devDependencies": {
@@ -18,16 +19,6 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "name": "@snowcoders/renovate-config",
-  "renovate-config": {
-    "default": {
-      "automerge": true,
-      "automergeType": "pr",
-      "extends": [
-        "config:base"
-      ],
-      "rangeStrategy": "auto"
-    }
-  },
   "repository": "github:snowcoders/renovate-config",
   "scripts": {
     "build": "tsc",
@@ -36,5 +27,5 @@
     "test": "jest"
   },
   "tsconfig": "./tsconfig.base.json",
-  "version": "0.2.2"
+  "version": "1.0.0"
 }
