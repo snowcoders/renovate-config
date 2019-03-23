@@ -5,6 +5,7 @@
 .npmignore
 .vscode/**
 coverage/**
+dist/**/*.test.*
 src/**
 tsconfig.json
 *rc.js

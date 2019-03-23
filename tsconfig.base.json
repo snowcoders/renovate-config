@@ -4,10 +4,13 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
     "module": "commonjs",
     "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
     "preserveConstEnums": true,
-    "strictNullChecks": true,
+    "strict": true,
     "target": "es5"
   }
 }
