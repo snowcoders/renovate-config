@@ -1,3 +1,7 @@
+### 1.0.3
+
+- Fixed lintstage config for lint-staged@9.0.0
+
 ### 1.0.2
 
 - Renovate: Automerge all PRs once approved

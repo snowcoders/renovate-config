@@ -8,26 +8,28 @@ function getRunIfExists(command: string) {
   return `exec-if-exists ${command}`;
 }
 export const lintStaged = {
-  ignore: ["**/package-lock.json"],
-  linters: {
-    "**/*.{css,html,json,md}": [
-      getRunIfExists("prettier --write"),
-      getRunIfExists("sortier"),
-      "git add"
-    ],
-    "**/*.{js,jsx}": [
-      getRunIfExists("eslint --fix"),
-      getRunIfExists("prettier --write"),
-      getRunIfExists("sortier"),
-      "git add"
-    ],
-    "**/*.{ts,tsx}": [
-      getRunIfExists("tslint -c tslint.json --fix"),
-      getRunIfExists("prettier --write"),
-      getRunIfExists("sortier"),
-      "git add"
-    ]
-  }
+  "**/!(package-lock).{json}": [
+    getRunIfExists("prettier --write"),
+    getRunIfExists("sortier"),
+    "git add"
+  ],
+  "**/*.{css,html,md}": [
+    getRunIfExists("prettier --write"),
+    getRunIfExists("sortier"),
+    "git add"
+  ],
+  "**/*.{js,jsx}": [
+    getRunIfExists("eslint --fix"),
+    getRunIfExists("prettier --write"),
+    getRunIfExists("sortier"),
+    "git add"
+  ],
+  "**/*.{ts,tsx}": [
+    getRunIfExists("tslint -c tslint.json --fix"),
+    getRunIfExists("prettier --write"),
+    getRunIfExists("sortier"),
+    "git add"
+  ]
 };
 
 export const jest = {
