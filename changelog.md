@@ -1,3 +1,7 @@
+### 1.0.4
+
+- Changed renovate config to extend from their group:monorepos and group:recommended configs
+
 ### 1.0.3
 
 - Fixed lintstage config for lint-staged@9.0.0
