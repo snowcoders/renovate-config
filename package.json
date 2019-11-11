@@ -6,7 +6,7 @@
   },
   "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "devDependencies": {
-    "@snowcoders/sortier": "3.0.0",
+    "@snowcoders/sortier": "3.0.1",
     "@types/jest": "24.0.22",
     "husky": "3.0.9",
     "jest": "24.9.0",
