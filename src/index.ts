@@ -34,20 +34,9 @@ export const lintStaged = {
 
 export const jest = {
   collectCoverage: true,
-  globals: {
-    "ts-jest": {
-      diagnostics: {
-        ignoreCodes: [151001]
-      },
-      tsConfig: "tsconfig.json"
-    }
-  },
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
-  testMatch: ["<rootDir>/src/**/*.test.+(ts|tsx|js|jsx)"],
-  testURL: "http://localhost/",
-  transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest"
-  }
+  preset: "ts-jest",
+  roots: ["<rootDir>/src/"],
+  testURL: "http://localhost/"
 };
 
 export const prettier = {};

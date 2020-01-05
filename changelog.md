@@ -1,3 +1,9 @@
+### Unreleased
+
+### 1.0.5
+
+- Updated ts-jest integration for jest config
+
 ### 1.0.4
 
 - Changed renovate config to extend from their group:monorepos and group:recommended configs
