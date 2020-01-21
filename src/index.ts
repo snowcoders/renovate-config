@@ -5,7 +5,7 @@ export const husky = {
 };
 
 function getRunIfExists(command: string) {
-  return `exec-if-exists ${command}`;
+  return "exec-if-exists " + command;
 }
 export const lintStaged = {
   "**/!(package-lock).{json}": [
