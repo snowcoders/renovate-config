@@ -1,5 +1,7 @@
 ### Unreleased
 
+- Made `ts-jest` dependency more flexible as it supports 24 and 25
+
 ### 1.0.6
 
 - Added azureAutoComplete=true to default renovate config
