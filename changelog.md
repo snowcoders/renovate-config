@@ -1,6 +1,9 @@
 ### Unreleased
 
+### 1.0.7
+
 - Made `ts-jest` dependency more flexible as it supports 24 and 25
+- Upgraded lint-stage to the v10 configuration
 
 ### 1.0.6
 
