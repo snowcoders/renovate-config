@@ -1,3 +1,4 @@
-var configs = require("./dist/index");
+/* eslint-disable */
+const configs = require("./dist/index");
 
 module.exports = configs.jest;

@@ -1,5 +1,13 @@
 ### Unreleased
 
+Breaking:
+
+- Removed tslint in favor of eslint + eslint-typescript
+- Updated tsconfig.json
+  - noImplicitAny = true
+  - noImplicitThis = true
+  - preserveConstEnums = default
+
 ### 1.0.7
 
 - Made `ts-jest` dependency more flexible as it supports 24 and 25
