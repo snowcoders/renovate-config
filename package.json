@@ -1,7 +1,7 @@
 {
   "author": "k2snowman69",
   "dependencies": {
-    "exec-if-exists": "^1.0.1",
+    "exec-if-exists": "^2.0.0",
     "ts-jest": ">=24.0.0",
     "tslib": "^2.0.0"
   },
