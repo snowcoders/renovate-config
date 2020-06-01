@@ -1,5 +1,7 @@
 ### Unreleased
 
+### 2.0.0
+
 Breaking:
 
 - Removed tslint in favor of eslint + eslint-typescript
