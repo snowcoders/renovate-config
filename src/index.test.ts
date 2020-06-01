@@ -20,4 +20,8 @@ describe("index", () => {
   it("sortier", () => {
     expect(configs.sortier).toBeDefined();
   });
+
+  it("eslint", () => {
+    expect(configs.eslint).toBeDefined();
+  });
 });

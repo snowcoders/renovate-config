@@ -2,15 +2,6 @@
 
 This repository hosts several sharable configs that can be consumed and customized by Snowcoders packages.
 
-Currently it hosts the following configs
-
-- Husky
-- Lint staged
-- Nyc
-- Prettier
-- Renovate
-- Sortier
-
 We're open to hosting more, as long as they are a part of the Snowcoders ecosystem.
 
 Other things that are useful from this repository
@@ -22,49 +13,138 @@ Other things that are useful from this repository
 
 A great example of how to use these configs is this repository itself! Though for you instead of referencing the `dist` folder directly you would reference `@snowcoders/renovate-config`
 
+## Eslint config
+
+1. Install dependencies
+
+   ```bash
+   npm i --save-dev --exact eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-prettier eslint-plugin-prettier
+   ```
+
+1. Create file`.eslintrc.js`.
+1. Add the following contents
+
+   ```js
+   /* eslint-disable */
+   const configs = require("@snowcoders/renovate-config");
+
+   module.exports = configs.eslint;
+   ```
+
 ## Husky config
 
-No customization should be needed. Recommended filename `.huskyrc.js`.
+1. Install dependencies
+
+   ```bash
+   npm i --save-dev --exact husky lint-staged
+   ```
+
+1. Create file`.huskyrc.js`.
+1. Add the following contents
+
+   ```js
+   /* eslint-disable */
+   const configs = require("@snowcoders/renovate-config");
+
+   module.exports = configs.husky;
+   ```
 
 ## Jest config
 
-No customization should be needed. Recommended filename `jest.config.js`.
+1. Install dependencies
+
+   ```bash
+   npm i --save-dev --exact jest ts-jest
+   ```
+
+1. Create file `jest.config.js`.
+1. Add the following contents
+
+   ```js
+   /* eslint-disable */
+   const configs = require("@snowcoders/renovate-config");
+
+   module.exports = configs.jest;
+   ```
 
 ## Lint staged config
 
-No customization should be needed. Recommended filename `.lintstagedrc.js`.
+1. Install dependencies
+
+   ```bash
+   npm i --save-dev --exact husky lint-staged
+   ```
+
+1. Create file`.lintstagedrc.js`.
+1. Add the following contents
+
+   ```js
+   /* eslint-disable */
+   const configs = require("@snowcoders/renovate-config");
+
+   module.exports = configs.lintStaged;
+   ```
 
 ## Prettier config
 
-No customization should be needed. Recommended filename `.prettierrc.js`.
+1. Install dependencies
+
+   ```bash
+   npm i --save-dev --exact prettier
+   ```
+
+1. Create file`.prettierrc.js`.
+1. Add the following contents
+
+   ```js
+   /* eslint-disable */
+   const configs = require("@snowcoders/renovate-config");
+
+   module.exports = configs.prettier;
+   ```
 
 ## Sortier config
 
-No customization should be needed. Recommended filename `.sortierrc.js`.
+1. Install dependencies
+
+   ```bash
+   npm i --save-dev --exact sortier
+   ```
+
+1. Create file`.sortierrc.js`.
+1. Add the following contents
+
+   ```js
+   /* eslint-disable */
+   const configs = require("@snowcoders/renovate-config");
+
+   module.exports = configs.sortier;
+   ```
 
 ## Typescript config
 
-You are able to use this package as a [base for your tsconfig file](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-2.html#tsconfigjson-inheritance-via-nodejs-packages).
+1. Install dependencies
 
-Our config focuses more on the actual build outputs so your config can focus more on the `strict*` and `no*` options. An example of a subconfig would look like:
+   ```bash
+   npm i --save-dev --exact typescript
+   ```
 
-```
-{
-  "compilerOptions": {
-    "noImplicitAny": false,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "outDir": "./dist/",
-    "strictBindCallApply": true
-  },
-  "extends": "@snowcoders/renovate-config",
-  "include": ["./src/**/*.ts"]
-}
-```
+1. Create file`.tsconfig.json`.
+1. Add the following contents
 
-# Missing configs
-
-## Nyc
-
-Nyc only supports `.nycrc` files. Instead they use an `extends` system which we have not set up.
+   ```json
+   {
+     "compilerOptions": {
+       /* Must be defined per project */
+       "outDir": "./dist/",
+       /* Useful for development builds */
+       "sourceMap": true,
+       /* Depends per project */
+       "module": "CommonJS",
+       /* Depends per project */
+       "target": "ES5"
+     },
+     "extends": "@snowcoders/renovate-config",
+     "include": ["./src/**/*.ts", "./src/**/*.tsx"]
+   }
+   ```
