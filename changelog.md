@@ -1,5 +1,9 @@
 ### Unreleased
 
+### 2.0.1
+
+- Fixed typescript config to allow for unused parameters
+
 ### 2.0.0
 
 Breaking:
