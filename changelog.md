@@ -1,5 +1,8 @@
 ### Unreleased
 
+- Updated tsconfig.json
+  - noFallthroughCasesInSwitch = false (tracked via eslint)
+
 ### 2.0.1
 
 - Fixed typescript config to allow for unused parameters
