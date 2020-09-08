@@ -1,5 +1,7 @@
 ### Unreleased
 
+### 2.0.2
+
 - Updated tsconfig.json
   - noFallthroughCasesInSwitch = false (tracked via eslint)
 
