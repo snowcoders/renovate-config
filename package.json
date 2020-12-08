@@ -6,7 +6,7 @@
   "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "devDependencies": {
     "@snowcoders/sortier": "3.2.0",
-    "@types/jest": "26.0.16",
+    "@types/jest": "26.0.17",
     "@typescript-eslint/eslint-plugin": "4.9.1",
     "@typescript-eslint/parser": "4.9.1",
     "eslint": "7.15.0",
