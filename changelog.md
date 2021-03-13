@@ -1,5 +1,10 @@
 ### Unreleased
 
+### 2.0.3
+
+- Updated renovate config
+  - Limited version of husky to 4.x.x
+
 ### 2.0.2
 
 - Updated tsconfig.json
