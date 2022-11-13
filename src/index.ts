@@ -2,12 +2,6 @@ function getRunIfExists(command: string) {
   return "exec-if-exists " + command;
 }
 
-export const husky = {
-  hooks: {
-    "pre-commit": "lint-staged",
-  },
-};
-
 export const lintStaged = {
   "**/!(package-lock).{json}": [
     getRunIfExists("prettier --write"),

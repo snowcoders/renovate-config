@@ -1,20 +1,48 @@
-### Unreleased
+# Changelog
 
-### 2.0.3
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+- Husky - BREAKING
+  - Removed husky config as [it's an anti-pattern](https://github.com/typicode/husky/issues/1047). To see how to migrate away from this config, see the PR that added this entry. You can also try the following script, just verify the `prepare` script looks correct after running:
+    ```
+    npm ci
+    npm set-script prepare "npx --no husky install"
+    npm set-script husky:commit-msg "npx --no commitlint -- --edit"
+    npm set-script husky:pre-commit "npx --no lint-staged"
+    npm set-script husky:pre-push "npm test"
+    npm uninstall @tesla/husky-installer
+    npm install -D -E husky@latest
+    npm run prepare
+    npx husky set .husky/commit-msg "npm run husky:commit-msg"
+    npx husky set .husky/pre-commit "npm run husky:pre-commit"
+    npx husky set .husky/pre-push "npm run husky:pre-push"
+    rm .huskyrc.cjs
+    rm .huskyrc.js
+    rm .huskyrc.mjs
+    rm .huskyrc.ts
+    npm i
+    ```
+
+## 2.0.3
 
 - Updated renovate config
   - Limited version of husky to 4.x.x
 
-### 2.0.2
+## 2.0.2
 
 - Updated tsconfig.json
   - noFallthroughCasesInSwitch = false (tracked via eslint)
 
-### 2.0.1
+## 2.0.1
 
 - Fixed typescript config to allow for unused parameters
 
-### 2.0.0
+## 2.0.0
 
 Breaking:
 
@@ -24,36 +52,36 @@ Breaking:
   - noImplicitThis = true
   - preserveConstEnums = default
 
-### 1.0.7
+## 1.0.7
 
 - Made `ts-jest` dependency more flexible as it supports 24 and 25
 - Upgraded lint-stage to the v10 configuration
 
-### 1.0.6
+## 1.0.6
 
 - Added azureAutoComplete=true to default renovate config
 
-### 1.0.5
+## 1.0.5
 
 - Updated ts-jest integration for jest config
 
-### 1.0.4
+## 1.0.4
 
 - Changed renovate config to extend from their group:monorepos and group:recommended configs
 
-### 1.0.3
+## 1.0.3
 
 - Fixed lintstage config for lint-staged@9.0.0
 
-### 1.0.2
+## 1.0.2
 
 - Renovate: Automerge all PRs once approved
 
-### 1.0.1
+## 1.0.1
 
 - Fixed `renovate.config` inheritence
 
-### 1.0.0
+## 1.0.0
 
 - Breaking: tsconfig
   - Enabled `strict` mode
@@ -63,25 +91,25 @@ Breaking:
 - Fixed `renovate.config` to not reference self
 - Updated `.npmignore` to omit all test related files so all files can be included in the build
 
-### 0.2.2
+## 0.2.2
 
 - Added autofixing of lint errors
 - Added eslint to javascript
 
-### 0.2.1
+## 0.2.1
 
 - Fixed lint-staged not running on `*.md` files
 
-### 0.2.0
+## 0.2.0
 
 - Updated .gitignore and .npmignore to be more generic so they can be the base standard across repositories
 - Added jest config
 
-### 0.1.4
+## 0.1.4
 
 - Integrated `exec-if-exists` to skip cli commands that aren't available (creating an opt in experience for git commit hooks)
 
-### 0.1.3
+## 0.1.3
 
 - Migrated package from renovate-config-snowcoders to @snowcoders/renovate-config
 - Added a husky config
