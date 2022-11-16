@@ -27,6 +27,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     rm .huskyrc.ts
     npm i
     ```
+- Tsconfig - BREAKING
+  - `module` now inherits it's value from Typescript (should resolve to ES2015)
+  - `target` updated to ES2020
 
 ## 2.0.3
 
