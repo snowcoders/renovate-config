@@ -1,4 +1,3 @@
-/* eslint-disable */
-const configs = require("./dist/index");
+import { jest } from "./dist/index.js";
 
-module.exports = configs.jest;
+export default jest;

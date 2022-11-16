@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0-beta.3] - 2022-11-16
+
 - Husky - BREAKING
   - Removed husky config as [it's an anti-pattern](https://github.com/typicode/husky/issues/1047). To see how to migrate away from this config, see the PR that added this entry. You can also try the following script, just verify the `prepare` script looks correct after running:
     ```

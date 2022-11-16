@@ -1,10 +1,7 @@
-import * as configs from "./index";
+import { describe, expect, it } from "@jest/globals";
+import * as configs from "./index.js";
 
 describe("index", () => {
-  it("husky", () => {
-    expect(configs.husky).toBeDefined();
-  });
-
   it("jest", () => {
     expect(configs.jest).toBeDefined();
   });
@@ -22,6 +19,6 @@ describe("index", () => {
   });
 
   it("eslint", () => {
-    expect(configs.eslint).toBeDefined();
+    expect(configs.buildEslintConfig).toBeDefined();
   });
 });
