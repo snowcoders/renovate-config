@@ -1,4 +1,8 @@
 /* eslint-disable */
-const configs = require("./dist/index");
+const configs = require("./dist-cjs/index.js");
 
-module.exports = configs.eslint;
+module.exports = configs.buildEslintConfig({
+  esm: true,
+  prettier: true,
+  typescript: true,
+});

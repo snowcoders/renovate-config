@@ -30,6 +30,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tsconfig - BREAKING
   - `module` now inherits it's value from Typescript (should resolve to ES2015)
   - `target` updated to ES2020
+- eslint - BREAKING
+  - Moved to a builder function `buildEslintConfig` that takes in a options object
+- Release-it
+  - Added brand new config
 
 ## 2.0.3
 
