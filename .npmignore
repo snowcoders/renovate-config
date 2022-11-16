@@ -1,13 +1,8 @@
-.circleci/**
-.nyc_output/**
-.vscode/**
-.gitignore
-.npmignore
-.vscode/**
-coverage/**
-dist/**/*.test.*
-src/**
-tsconfig.json
-*rc.js
-jest.config.js
-webpack.config.js
+# Ignore everything
+**
+
+!/dist-cjs/**
+!/dist/**
+!CHANGELOG.md
+!package.json
+!README.md

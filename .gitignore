@@ -1,5 +1,7 @@
-.nyc_output
+.DS_Store
+.rpt2_cache
+*.log
 coverage
 dist
+dist-cjs
 node_modules
-*.log
