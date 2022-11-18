@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0-beta.4] - 2022-11-18
+
+- Tsconfig - Fixed missing tsconfig file
+
 ## [3.0.0-beta.3] - 2022-11-16
 
 - Husky - BREAKING
