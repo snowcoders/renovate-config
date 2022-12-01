@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Tsconfig
+  - Moved tsconfig.json to tsconfig.base.json though you should probably not use this directly anymore... See documentation on [the README about typescript configs](./README.md#typescript-config)
+
 ## [3.0.0-beta.4] - 2022-11-18
 
 - Tsconfig - Fixed missing tsconfig file
@@ -21,7 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     npm set-script husky:commit-msg "npx --no commitlint -- --edit"
     npm set-script husky:pre-commit "npx --no lint-staged"
     npm set-script husky:pre-push "npm test"
-    npm uninstall @tesla/husky-installer
     npm install -D -E husky@latest
     npm run prepare
     npx husky set .husky/commit-msg "npm run husky:commit-msg"

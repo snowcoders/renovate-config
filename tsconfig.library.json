@@ -1,0 +1,12 @@
+/*
+Intermediate tsconfig not intended for consumption
+*/
+{
+  "compilerOptions": {
+    "removeComments": false,
+    "rootDir": "./src"
+  },
+  "exclude": ["./src/**/*.test.ts"],
+  "extends": "./tsconfig.base.json",
+  "include": ["./src/**/*.ts"]
+}

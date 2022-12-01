@@ -126,25 +126,25 @@ A great example of how to use these configs is this repository itself! Though fo
 1. Install dependencies
 
    ```bash
-   npm i --save-dev --exact typescript
+   npm i -D -E typescript
    ```
 
-1. Create file`.tsconfig.json`.
-1. Add the following contents
+### For libraries
 
-   ```json
-   {
-     "compilerOptions": {
-       /* Must be defined per project */
-       "outDir": "./dist/",
-       /* Useful for development builds */
-       "sourceMap": true,
-       /* Depends per project */
-       "module": "CommonJS",
-       /* Depends per project */
-       "target": "ES5"
-     },
-     "extends": "@snowcoders/renovate-config",
-     "include": ["./src/**/*.ts", "./src/**/*.tsx"]
-   }
-   ```
+Our project has three tsconfigs for libraries
+
+- tsconfig.library.cjs.json - config to be used for cjs projects
+- tsconfig.library.esm.json - config to be used for esm projects
+
+For libraries which support both ESM and CJS, the current recommendation is to have your `tsconfig.json` extend `tsconfig.library.esm.json` and then have a separate tsconfig.cjs.json for the CJS build. This will mean that VSCode will load intellisense for ESM but overall it shouldn't impact your development day to day.
+
+### For websites
+
+Our project has three tsconfigs for libraries
+
+- tsconfig.website.json - config that tsconfig.json extends for vscode intellisense
+- tsconfig.website.browser.dev.json - config for webpack to use for development browser asset builds
+- tsconfig.website.browser.prod.json - config for webpack to use for production browser asset builds
+- tsconfig.website.server.json - config to build the node server assets
+
+For libraries which support both ESM and CJS, the current recommendation is to have your `tsconfig.json` extend `tsconfig.library.esm.json` and then have a separate tsconfig.cjs.json for the CJS build. This will mean that VSCode will load intellisense for ESM but overall it shouldn't impact your development day to day.

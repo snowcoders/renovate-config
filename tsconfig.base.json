@@ -12,6 +12,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
+    "sourceMap": true,
     "strict": true,
     "target": "ES2020"
   }
