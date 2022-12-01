@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "declarationDir": "./dist",
+    "module": "ES2020",
+    "outDir": "./dist"
+  },
+  "extends": "./tsconfig.library.json"
+}
