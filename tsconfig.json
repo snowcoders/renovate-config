@@ -1,3 +1,4 @@
 {
-  "extends": "./tsconfig.library.esm.json"
+  "extends": "./tsconfig.library.json",
+  "include": ["./src/**/*"]
 }

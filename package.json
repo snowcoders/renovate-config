@@ -53,8 +53,8 @@
   "repository": "github:snowcoders/renovate-config",
   "scripts": {
     "build": "concurrently \"npm:build:*\"",
-    "build:cjs": "tsc -p tsconfig.library.cjs.json && cpy ./src/cjs-package.json.txt ./dist-cjs --flat --rename=package.json",
-    "build:esm": "tsc -p tsconfig.library.esm.json",
+    "build:cjs": "tsc -p tsconfig.prod-cjs.json && cpy ./src/cjs-package.json.txt ./dist-cjs --flat --rename=package.json",
+    "build:esm": "tsc -p tsconfig.prod-esm.json",
     "clean": "rimraf coverage dist dist-cjs",
     "husky:commit-msg": "echo 'No commit message hook'",
     "husky:pre-commit": "npx --no lint-staged",

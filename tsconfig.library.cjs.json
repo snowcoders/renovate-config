@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "sourceMap": false
   },
   "extends": "./tsconfig.library.json"
 }
