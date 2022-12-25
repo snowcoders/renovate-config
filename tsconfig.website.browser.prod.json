@@ -1,5 +1,6 @@
 {
-  "exclude": ["./src/**/*.test"],
-  "extends": "./tsconfig.website.base.json",
-  "include": ["./src/browser"]
+  "compilerOptions": {
+    "sourceMap": false
+  },
+  "extends": "./tsconfig.website.base.json"
 }
