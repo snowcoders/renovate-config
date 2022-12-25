@@ -2,7 +2,5 @@
   "compilerOptions": {
     "target": "ES2019"
   },
-  "exclude": ["./src/**/*.test"],
-  "extends": "./tsconfig.website.base.json",
-  "include": ["./src/server"]
+  "extends": "./tsconfig.website.base.json"
 }

@@ -129,6 +129,13 @@ A great example of how to use these configs is this repository itself! Though fo
    npm i -D -E typescript
    ```
 
+For all configs, you'll need to specify:
+
+- compilerOptions.rootdir
+- compilerOptions.outdir
+- include
+- exclude
+
 ### For libraries
 
 Our project has three tsconfigs for libraries

@@ -3,10 +3,7 @@ Intermediate tsconfig not intended for consumption
 */
 {
   "compilerOptions": {
-    "removeComments": false,
-    "rootDir": "./src"
+    "removeComments": false
   },
-  "exclude": ["./src/**/*.test.ts"],
-  "extends": "./tsconfig.base.json",
-  "include": ["./src/**/*.ts"]
+  "extends": "./tsconfig.base.json"
 }
