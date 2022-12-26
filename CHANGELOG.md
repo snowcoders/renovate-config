@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fixed `tsconfig.website.browser.[dev|prod].json` having a broken base config reference
+
 ## [3.0.0-beta.6] - 2022-12-25
 
 - Removed include, exclude, rootdir, declarationdir, and outdir from tsconfig files
