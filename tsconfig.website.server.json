@@ -2,5 +2,5 @@
   "compilerOptions": {
     "target": "ES2019"
   },
-  "extends": "./tsconfig.website.base.json"
+  "extends": "./tsconfig.website.json"
 }
