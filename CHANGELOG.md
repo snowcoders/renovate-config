@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fixed release-it jsdoc comments
+
 ## [3.0.0-beta.7] - 2022-12-26
 
 - Fixed `tsconfig.website.browser.[dev|prod].json` having a broken base config reference
