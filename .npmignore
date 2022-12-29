@@ -1,9 +1,16 @@
-# Ignore everything
+# Use an allow list system so we don't accidentally publish something we don't mean to
 **
 
 !/dist-cjs/**
 !/dist/**
-!CHANGELOG.md
-!package.json
-!README.md
-!tsconfig.*.json
+!/LICENSE
+!/CHANGELOG.md
+!/README.md
+!/tsconfig.base.json
+!/tsconfig.library.cjs.json
+!/tsconfig.library.esm.json
+!/tsconfig.library.json
+!/tsconfig.website.browser.dev.json
+!/tsconfig.website.browser.prod.json
+!/tsconfig.website.json
+!/tsconfig.website.server.json

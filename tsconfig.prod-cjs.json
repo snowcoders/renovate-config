@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "outDir": "dist-cjs",
-    "rootDir": "src"
-  },
-  "exclude": ["./src/**/*.test.ts"],
-  "extends": "./tsconfig.library.cjs.json",
-  "include": ["./src/**/*"]
-}

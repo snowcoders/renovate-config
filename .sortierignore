@@ -1,4 +1,4 @@
-# Locally generated files
+# From the gitignore
 coverage
 dist
 dist-cjs
