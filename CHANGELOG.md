@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0-beta.8] - 2022-12-30
+
 - Fixed release-it jsdoc comments
+- Dropped node 12 and 14 support
 
 ## [3.0.0-beta.7] - 2022-12-26
 
