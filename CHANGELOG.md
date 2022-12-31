@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.0.0-beta.9] - 2022-12-31
 
-- Fixed jest test config to correctly apply ts-jest's ESM config
+- Fixed jest config to apply to tsx files
 
 ## [3.0.0-beta.8] - 2022-12-30
 
