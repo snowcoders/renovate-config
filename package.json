@@ -40,12 +40,6 @@
   "license": "MIT",
   "main": "./dist-cjs/index.js",
   "name": "@snowcoders/renovate-config",
-  "optionalDependencies": {
-    "@types/eslint": "*",
-    "prettier": ">=2.1.0",
-    "sortier": ">=2.0.0 || >=2.0.0-beta.0",
-    "ts-jest": "*"
-  },
   "repository": "github:snowcoders/renovate-config",
   "scripts": {
     "build": "concurrently \"npm:build:*\"",
