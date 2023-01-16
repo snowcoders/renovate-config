@@ -2,18 +2,23 @@ function getRunIfExists(command: string) {
   return "exec-if-exists " + command;
 }
 
+/**
+ * Optional tooling
+ *  - eslint@>=8.0.0
+ *  - prettier@>=2.1.0
+ *  - sortier@>=2.0.0
+ */
 export const lintStaged = {
-  // Files that only get prettier
-  "**/*.{md}": [getRunIfExists("prettier --write")],
+  // Generated files or files handled further down in this file
+  "**/!(package-lock.json|*.@(?([cm])[jt]s)?(x))": [
+    getRunIfExists("prettier --write --ignore-unknown"),
+    getRunIfExists("sortier --ignore-unknown"),
+  ],
 
-  // Files that get prettier and sortier
-  "**/!(package-lock).json": [getRunIfExists("prettier --write"), getRunIfExists("sortier")],
-  "**/*.{css,scss,sass,less,html}": [getRunIfExists("prettier --write"), getRunIfExists("sortier")],
-
-  // Files that get eslint, prettier and sortier
-  "**/*.{js,jsx,ts,tsx}": [
+  // Javascript based source code files
+  "**/*.@(?([cm])[jt]s)?(x)": [
     getRunIfExists("eslint --fix"),
-    getRunIfExists("prettier --write"),
-    getRunIfExists("sortier"),
+    getRunIfExists("prettier --write --ignore-unknown"),
+    getRunIfExists("sortier --ignore-unknown"),
   ],
 };

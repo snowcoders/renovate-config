@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Improved and cleaned up lint-staged config
+  - Requires sortier 2.0.0-beta.0 or higher
+  - Requires prettier@2.1.0 or higher
+
 ## [3.0.0-beta.9] - 2022-12-31
 
 - Fixed jest config to apply to tsx files
