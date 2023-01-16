@@ -4,6 +4,6 @@
     "outDir": "./dist",
     "rootDir": "./src"
   },
-  "include": ["./src/**/*"],
-  "extends": "./tsconfig.library.json"
+  "extends": "./tsconfig.library.json",
+  "include": ["./src/**/*"]
 }

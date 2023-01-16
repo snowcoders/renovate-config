@@ -1,7 +1,7 @@
 {
   "author": "k2snowman69",
   "dependencies": {
-    "exec-if-exists": "^3.0.0"
+    "exec-if-exists": "^4.0.0-beta.1"
   },
   "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "devDependencies": {
@@ -42,6 +42,8 @@
   "name": "@snowcoders/renovate-config",
   "optionalDependencies": {
     "@types/eslint": "*",
+    "prettier": ">=2.1.0",
+    "sortier": ">=2.0.0 || >=2.0.0-beta.0",
     "ts-jest": "*"
   },
   "repository": "github:snowcoders/renovate-config",

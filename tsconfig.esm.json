@@ -3,7 +3,7 @@
     "outDir": "./dist",
     "rootDir": "./src"
   },
-  "include": ["./src/**/*"],
   "exclude": ["./src/**/*.test.ts"],
-  "extends": "./tsconfig.library.esm.json"
+  "extends": "./tsconfig.library.esm.json",
+  "include": ["./src/**/*"]
 }
