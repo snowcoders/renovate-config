@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0-beta.10] - 2023-01-16
+
 - Improved and cleaned up lint-staged config
   - Requires sortier 2.0.0-beta.0 or higher
   - Requires prettier@2.1.0 or higher
