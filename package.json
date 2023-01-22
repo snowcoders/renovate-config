@@ -1,7 +1,7 @@
 {
   "author": "k2snowman69",
   "dependencies": {
-    "exec-if-exists": "^4.0.0-beta.1"
+    "exec-if-exists": "^4.0.0-beta.2"
   },
   "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "devDependencies": {
