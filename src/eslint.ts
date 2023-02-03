@@ -1,4 +1,7 @@
 import { Linter } from "eslint";
+import { throwIfVersionNotInRange } from "./validate-version.js";
+
+throwIfVersionNotInRange("eslint", 8);
 
 export const buildEslintConfig = (options: {
   /**
