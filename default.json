@@ -3,5 +3,17 @@
   "automerge": true,
   "azureAutoComplete": true,
   "description": "Default renovate config that repositories referencing this repo will use",
-  "extends": ["config:base"]
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "ignoreUnstable": false,
+      "matchPackageNames": [
+        "@snowcoders/renovate-config",
+        "exec-if-exists",
+        "jest-react-mock-utils",
+        "react-context-store",
+        "sortier"
+      ]
+    }
+  ]
 }
