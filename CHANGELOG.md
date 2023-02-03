@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Added major version checks for eslint, prettier, and sortier during config load
+
 ## [3.0.0-beta.12] - 2023-01-22
 
 - Updated exec-if-exists@beta
