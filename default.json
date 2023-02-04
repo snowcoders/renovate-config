@@ -1,9 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "automerge": true,
-  "azureAutoComplete": true,
   "description": "Default renovate config that repositories referencing this repo will use",
   "extends": ["config:base"],
+
+  "automerge": true,
+  "azureAutoComplete": true,
   "packageRules": [
     {
       "ignoreUnstable": false,
