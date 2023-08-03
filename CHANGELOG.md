@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Updated tsconfig moduleResolution to 16
+
 ## [3.0.0-beta.13] - 2023-02-03
 
 - Added major version checks for eslint, prettier, and sortier during config load
