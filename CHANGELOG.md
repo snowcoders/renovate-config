@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0-beta.14] - 2023-08-03
+
 - Updated tsconfig moduleResolution to 16
 
 ## [3.0.0-beta.13] - 2023-02-03
