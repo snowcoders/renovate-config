@@ -149,7 +149,7 @@ Our project has three tsconfigs for libraries
 
 Our project has four tsconfigs for websites
 
-- tsconfig.library.json - config to be used for cli tools within the project
+- tsconfig.website.json - config to be used for cli tools within the project
   - E.g. this is what your root tsconfig.json extends
 - tsconfig.website.browser.dev.json - config for webpack to use for development browser asset builds
 - tsconfig.website.browser.prod.json - config for webpack to use for production browser asset builds

@@ -8,8 +8,7 @@ If building a website you want three tsconfig files:
   "compilerOptions": {
     "declaration": false,
     "jsx": "react",
-    "module": "Node16",
     "preserveConstEnums": true
   },
-  "extends": "./tsconfig.base.json"
+  "extends": "./tsconfig.library.json"
 }
