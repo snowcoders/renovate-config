@@ -6,11 +6,7 @@
 !/LICENSE
 !/CHANGELOG.md
 !/README.md
-!/tsconfig.base.json
-!/tsconfig.library.cjs.json
-!/tsconfig.library.esm.json
-!/tsconfig.library.json
-!/tsconfig.website.browser.dev.json
-!/tsconfig.website.browser.prod.json
-!/tsconfig.website.json
-!/tsconfig.website.server.json
+!/tsconfig.*
+/tsconfig.json
+/tsconfig.cjs.json
+/tsconfig.esm.json

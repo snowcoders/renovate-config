@@ -1,8 +1,5 @@
 /*
-If building a website you want three tsconfig files:
- - tsconfig.server.json - extends tsconfig.website.server.json, used for building server dist output
- - tsconfig.browser.dev.json - extends tsconfig.website.browser.dev.json, used for building browser debug code
- - tsconfig.browser.prod.json - extends tsconfig.website.browser.prod.json, used for building browser prod code
+See https://github.com/snowcoders/renovate-config#for-websites for usage information
 */
 {
   "compilerOptions": {

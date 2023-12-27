@@ -1,6 +1,5 @@
 /*
-Root tsconfig which containts the more stylistic options available through tsconfig
-Not meant for direct consumption
+See https://github.com/snowcoders/renovate-config#typescript-config for usage information
 */
 {
   "compilerOptions": {
