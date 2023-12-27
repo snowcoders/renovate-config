@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0-beta.15] - 2023-12-27
+
 - tsconfigs
   - Support typescript >=5.2.0
   - Dropping support for anything before node16 (es2022)
