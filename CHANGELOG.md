@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0-beta.16] - 2023-12-27
+
 - tsconfigs
   - Fixed bug where moduleResolution needs to be defined with module
 
