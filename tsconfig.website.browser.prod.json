@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
+    "removeComments": true,
     "sourceMap": false
   },
-  "extends": "./tsconfig.website.json"
+  "extends": "./tsconfig.website.browser.json"
 }

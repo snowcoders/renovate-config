@@ -1,6 +1,13 @@
+/*
+If building a library you want three tsconfig files:
+ - tsconfig.json - extends tsconfig.library.json
+ - tsconfig.cjs.json - extends tsconfig.library.cjs.json
+ - tsconfig.esm.json - extends tsconfig.library.esm.json
+*/
 {
   "compilerOptions": {
-    "module": "ES2020",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
     "sourceMap": false
   },
   "extends": "./tsconfig.library.json"

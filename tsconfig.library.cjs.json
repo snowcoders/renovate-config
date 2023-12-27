@@ -1,6 +1,13 @@
+/*
+If building a library you want three tsconfig files:
+ - tsconfig.json - extends tsconfig.library.json
+ - tsconfig.cjs.json - extends tsconfig.library.cjs.json
+ - tsconfig.esm.json - extends tsconfig.library.esm.json
+*/
 {
   "compilerOptions": {
     "module": "CommonJS",
+    "moduleResolution": "Node10",
     "sourceMap": false
   },
   "extends": "./tsconfig.library.json"
