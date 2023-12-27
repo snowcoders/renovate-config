@@ -140,18 +140,17 @@ For all configs, you'll need to specify:
 
 Our project has three tsconfigs for libraries
 
-- tsconfig.library.cjs.json - config to be used for cjs projects
-- tsconfig.library.esm.json - config to be used for esm projects
-
-For libraries which support both ESM and CJS, the current recommendation is to have your `tsconfig.json` extend `tsconfig.library.esm.json` and then have a separate tsconfig.cjs.json for the CJS build. This will mean that VSCode will load intellisense for ESM but overall it shouldn't impact your development day to day.
+- tsconfig.library.json - config to be used for cli tools within the project
+  - E.g. this is what your root tsconfig.json extends
+- tsconfig.library.cjs.json - config to be used for cjs output
+- tsconfig.library.esm.json - config to be used for esm output
 
 ### For websites
 
-Our project has three tsconfigs for libraries
+Our project has four tsconfigs for websites
 
-- tsconfig.website.json - config that tsconfig.json extends for vscode intellisense
+- tsconfig.library.json - config to be used for cli tools within the project
+  - E.g. this is what your root tsconfig.json extends
 - tsconfig.website.browser.dev.json - config for webpack to use for development browser asset builds
 - tsconfig.website.browser.prod.json - config for webpack to use for production browser asset builds
 - tsconfig.website.server.json - config to build the node server assets
-
-For libraries which support both ESM and CJS, the current recommendation is to have your `tsconfig.json` extend `tsconfig.library.esm.json` and then have a separate tsconfig.cjs.json for the CJS build. This will mean that VSCode will load intellisense for ESM but overall it shouldn't impact your development day to day.

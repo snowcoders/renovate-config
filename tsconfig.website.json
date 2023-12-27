@@ -1,17 +1,15 @@
 /*
-Intermediate tsconfig not intended for consumption
+If building a website you want three tsconfig files:
+ - tsconfig.server.json - extends tsconfig.website.server.json, used for building server dist output
+ - tsconfig.browser.dev.json - extends tsconfig.website.browser.dev.json, used for building browser debug code
+ - tsconfig.browser.prod.json - extends tsconfig.website.browser.prod.json, used for building browser prod code
 */
 {
   "compilerOptions": {
     "declaration": false,
-    "importHelpers": false,
     "jsx": "react",
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "strict": true,
-
-    "module": "ES2020",
-    "target": "ES2016"
+    "module": "Node16",
+    "preserveConstEnums": true
   },
   "extends": "./tsconfig.base.json"
 }

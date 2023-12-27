@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2019"
+    "module": "Node16",
+    "removeComments": false,
+    "sourceMap": true
   },
   "extends": "./tsconfig.website.json"
 }

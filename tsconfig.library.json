@@ -1,9 +1,14 @@
 /*
-Intermediate tsconfig not intended for consumption
+If building a library you want three tsconfig files:
+ - tsconfig.json - extends tsconfig.library.json, used for jest and other cli tools
+ - tsconfig.cjs.json - extends tsconfig.library.cjs.json, used for building a cjs output
+ - tsconfig.esm.json - extends tsconfig.library.esm.json, used for building a esm output
 */
 {
   "compilerOptions": {
-    "removeComments": false
+    "declaration": true,
+    "module": "Node16",
+    "sourceMap": true
   },
   "extends": "./tsconfig.base.json"
 }
