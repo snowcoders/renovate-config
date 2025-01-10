@@ -49,7 +49,7 @@
     "husky:commit-msg": "echo 'No commit message hook'",
     "husky:pre-commit": "npx --no lint-staged",
     "husky:pre-push": "npm test",
-    "prepare": "npm run clean && npm run build && npx --no husky install",
+    "prepare": "npm run clean && npm run build && npx --no husky",
     "test": "jest",
     "version": "changelog-updater && git add ."
   },
