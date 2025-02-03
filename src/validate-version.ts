@@ -3,7 +3,9 @@ import { execSync } from "node:child_process";
 export function throwIfVersionNotInRange(packageName: string, minimumMajorVersion: number): void {
   const result = verifyMajorVersion(packageName, minimumMajorVersion);
   if (result === false) {
-    throw new Error(`Installed version of package does not meet expecations. Expected ${arguments}`);
+    throw new Error(
+      `Installed version of package does not meet expecations. Expected ${packageName} to be atleast ${minimumMajorVersion}.x.x`,
+    );
   }
 }
 
