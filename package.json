@@ -6,7 +6,7 @@
   "description": "Renovate and other configs for all Snowcoders projects to inherit from",
   "devDependencies": {
     "@release-it/keep-a-changelog": "7.0.0",
-    "@types/eslint": "8.56.12",
+    "@types/eslint": "9.6.1",
     "@typescript-eslint/eslint-plugin": "8.29.0",
     "@typescript-eslint/parser": "8.29.0",
     "changelog-updater": "2.0.3",
